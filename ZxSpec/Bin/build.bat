@@ -3,9 +3,7 @@
 @SET Bin=..\..\..\..\ZXDev\Bin
 @SET Lib=..\..\..\..\ZXDev\Lib
 
-::%Bin%\sdcc -c %1.c -mz80 --reserve-regs-iy --opt-code-size -I "." -I %Lib%
-::@IF errorlevel 1 PAUSE
-%Bin%\sdcc Dice.c -mz80 --reserve-regs-iy --code-loc %CodeAddr% --data-loc %DataAddr% --opt-code-size -I "." -I %Lib% XDev.lib Basic.lib
+%Bin%\sdcc Dice.c -mz80 --reserve-regs-iy --code-loc %CodeAddr% --data-loc %DataAddr% --opt-code-size --disable-warning 59 --disable-warning 85 -I "." -I %Lib% -I %Lib%\C -I %Lib%\Obj -L %Lib% XDev.lib Basic.lib
 @IF errorlevel 1 PAUSE
 
 %Bin%\hex2bin Dice.ihx
