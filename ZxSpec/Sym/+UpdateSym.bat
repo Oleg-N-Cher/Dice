@@ -1,1 +1,0 @@
-@FOR %%i IN (*.sym) DO COPY /B /Y ..\..\..\..\ZXDev\Lib\Sym\%%i

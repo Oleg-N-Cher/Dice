@@ -1,0 +1,10 @@
+MainMod=
+CodeAdr=45056
+DataAdr=63488
+Options=--reserve-regs-iy
+Modules=
+Include=
+Libraries=
+Target=TAP
+Clean=TRUE
+Start=TRUE
