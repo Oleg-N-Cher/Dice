@@ -5,8 +5,11 @@
 
 :XDev
 
+@SET MainMod=Dice
 @SET CodeAdr=45056
 @SET DataAdr=63488
 @SET Options=--reserve-regs-iy
+@SET Include=-I .
 @SET Target=TAP
+
 %XDev%\ZXDev\Bin\Build.bat %1

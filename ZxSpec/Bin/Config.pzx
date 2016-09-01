@@ -1,9 +1,9 @@
-MainMod=
+MainMod=Dice
 CodeAdr=45056
 DataAdr=63488
 Options=--reserve-regs-iy
 Modules=
-Include=
+Include=-I .
 Libraries=
 Target=TAP
 Clean=TRUE

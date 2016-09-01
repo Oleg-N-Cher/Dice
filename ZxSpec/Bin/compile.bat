@@ -5,5 +5,8 @@
 
 :XDev
 
+@SET MainMod=Dice
 @SET Options=--reserve-regs-iy
+@SET Include=-I .
+
 %XDev%\ZXDev\Bin\Compile.bat %1
